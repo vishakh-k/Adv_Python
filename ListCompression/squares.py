@@ -1,3 +1,3 @@
-num=[i**2 for i in range(11)];
+num=[i**2 for i in range(0,5)];
 print(num);
 
