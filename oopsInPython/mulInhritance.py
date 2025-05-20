@@ -11,7 +11,7 @@ class Child(Triangle):
         super().__init__(l, height)
 
     def area(self):
-        return 0.5 * self.l * self.height;
+        return 0.5 * self.l * self.height
 
 c = Child(10, 5)
 print(f"Area of Triangle: {c.area()}");
