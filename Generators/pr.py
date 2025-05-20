@@ -8,4 +8,5 @@ num=count_up(5);
 print(next(num));
 print(next(num));
 print(next(num));
+raise StopIteration;
 print(next(num));
