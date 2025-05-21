@@ -13,3 +13,17 @@ else:
 
 os.chdir(dir_path)
 print(f"Changed working directory to: {os.getcwd()}")
+
+print("Current Working Directory:", os.getcwd())
+
+#abc=os.remove(r"D:\Adv_Python\basics\star1.py");
+#if not abc:
+    #print("File removed");
+#else:
+    #print("File is not deleted");
+
+abc=os.rmdir(r"D:\studentprofile");
+if not abc:
+    print("File removed");
+else:
+    print("File is not deleted");
