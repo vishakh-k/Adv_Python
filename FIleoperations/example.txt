@@ -1,0 +1,6 @@
+This is a file written using a context manager.
+a 
+b
+b
+caefk
+epakfl;sdal;gvd
