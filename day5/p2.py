@@ -94,11 +94,21 @@ update_data("4SN24MC012", name="SHRAVAN K", address="UDUPI")
 
 
 def delete_data(usn):
-    cursor.execute("DELETE FROM student WHERE usn=?",(usn,));
-    conn.commit()
-    print("data deleted");
+    try:
+        cursor.execute("DELETE FROM student WHERE usn = ?", (usn,))
+        conn.commit()
+        if cursor.rowcount > 0:
+            print(f"Data for USN {usn} deleted successfully.")
+        else:
+            print(f"No record found with USN {usn}.")
+    except sqlite3.Error as e:
+        print(f"Error while deleting data: {e}")
 
-delete_data("4SN24MC012")
+# Call the function
+delete_data("4SN24MC0112")
+
+# View remaining records
+view_data()
 
 # Close the connection at the end
 conn.close()

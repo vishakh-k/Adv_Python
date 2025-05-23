@@ -20,4 +20,3 @@ print(num1,num2);"""
 print(list(map(lambda x: x**2, filter(lambda x: x % 2 == 0, range(1, 51)))));
 
 
-

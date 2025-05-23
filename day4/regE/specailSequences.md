@@ -15,5 +15,3 @@
 # \s -> space will be extracting
 
 # \S -> it will give the words
-
-
