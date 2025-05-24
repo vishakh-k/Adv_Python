@@ -96,23 +96,23 @@ x = [1, 2, 3, 4]
 y = [10, 20, 25, 30]
 
 # Line plot
-plt.plot(x, y, label="Line Plot")
+plt.plot(x,y, label="Line Plot")
 
 # Scatter
 plt.scatter(x, y, color='red', label="Scatter")
 
 # Bar plot
-plt.bar(x, y, label="Bar", alpha=0.5)
+#plt.barh(x, y, color="green", label="Bar", alpha=0.5 , )
 
 # Histogram
-plt.hist([1, 1, 2, 3, 3, 3, 4, 5, 5], bins=5, label="Histogram")
+plt.hist(x, bins=5, label="Histogram")
 
 # Boxplot
 plt.boxplot([[1, 2, 5], [2, 3, 4]])
 
 # Pie chart
 plt.figure()
-plt.pie([25, 35, 40], labels=["A", "B", "C"])
+plt.pie([25,25,25,25], labels=["A", "B", "C","D",], colors=['white','blue','white','blue'] )
 
 # Labels and Grid
 plt.title("Sample Plot")
