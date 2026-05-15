@@ -1,3 +1,4 @@
+//counting numbers
 def count_up(max):
     count = 1
     while (count < max): 
